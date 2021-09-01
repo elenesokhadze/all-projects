@@ -79,10 +79,14 @@ const checkResultLength = () => {
         .toFixed(11)
         .toString()
         .substr(0, 11);
-      calculator.firstNumber = calculator.result
-        .toFixed(11)
-        .toString()
-        .substr(0, 11);
+
+      calculator.firstNumber = calculator.displayValue;
+      while (calculator.displayValue.slice(-1) == 0) {
+        calculator.displayValue = calculator.displayValue.substr(
+          0,
+          calculator.displayValue.length - 1
+        );
+      }
     } else {
       calculator.displayValue = calculator.result
         .toFixed(10)
