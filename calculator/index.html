@@ -4,7 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body id="body">
+    <div class="wrapper">
+      <div class="calc-head">
+        <div class="calc-head__number">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <div class="calc-head__wrapper">
+          <h1 class="calc-head__title">calc</h1>
+          <div class="calc-head__theme">
+            <div class="calc-head__theme--title">THEME</div>
+            <div class="calc-head__theme--button">
+              <input
+                type="range"
+                min="1"
+                max="3"
+                class="slider"
+                id="myRange"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calc-screen">
+        <div class="calc-screen__display">0</div>
+      </div>
+      <div class="calc-body">
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="7"
+        >
+          7
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="8"
+        >
+          8
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="9"
+        >
+          9
+        </button>
+        <button class="calc-body__item calc-body__item--blue" value="DEL">
+          DEL
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="4"
+        >
+          4
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="5"
+        >
+          5
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="6"
+        >
+          6
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular operator"
+          value="+"
+        >
+          +
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="1"
+        >
+          1
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="2"
+        >
+          2
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="3"
+        >
+          3
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular operator"
+          value="-"
+        >
+          -
+        </button>
+        <button class="calc-body__item calc-body__item--regular" value=".">
+          .
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular number"
+          value="0"
+        >
+          0
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular operator"
+          value="/"
+        >
+          /
+        </button>
+        <button
+          class="calc-body__item calc-body__item--regular operator"
+          value="*"
+        >
+          x
+        </button>
+        <button class="calc-body__item calc-body__item--blue" value="RESET">
+          AC
+        </button>
+        <button
+          class="calc-body__item calc-body__item--blue operator"
+          value="^"
+        >
+          EXP</button
+        ><button
+          class="calc-body__item calc-body__item--blue operator"
+          value="√"
+        >
+          √
+        </button>
+
+        <button class="calc-body__item calc-body__item--red" value="=">
+          =
+        </button>
+      </div>
+    </div>
+    <div id="error"></div>
+    <script src="style.js"></script>
+    <script src="calc.js"></script>
+  </body>
 </html>
